@@ -1,0 +1,531 @@
+The system is: Linux - 3.10.0-693.5.2.el7.x86_64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/pgcc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is PGI, found in "/home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/3.17.5/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/pgc++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is PGI, found in "/home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/3.17.5/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_66201/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_66201.dir/build.make CMakeFiles/cmTC_66201.dir/build
+gmake[1]: Entering directory `/home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_66201.dir/testCCompiler.c.o
+/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/pgcc    -o CMakeFiles/cmTC_66201.dir/testCCompiler.c.o   -c /home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_66201
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_66201.dir/link.txt --verbose=1
+/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/pgcc      CMakeFiles/cmTC_66201.dir/testCCompiler.c.o  -o cmTC_66201 
+gmake[1]: Leaving directory `/home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_7cee6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7cee6.dir/build.make CMakeFiles/cmTC_7cee6.dir/build
+gmake[1]: Entering directory `/home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7cee6.dir/CMakeCCompilerABI.c.o
+/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/pgcc   -v -o CMakeFiles/cmTC_7cee6.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake3/Modules/CMakeCCompilerABI.c
+Export NVCOMPILER=/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5
+Export PGI=/home/ewa19/RISM/hpc_sdk
+
+/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/tools/cpp1 --llalign -Dunix -D__unix -D__unix__ -Dlinux -D__linux -D__linux__ -D__NO_MATH_INLINES -D__LP64__ -D__x86_64 -D__x86_64__ -D__LONG_MAX__=9223372036854775807L '-D__SIZE_TYPE__=unsigned long int' '-D__PTRDIFF_TYPE__=long int' -D__amd64 -D__amd64__ -D__k8 -D__k8__ -D__MMX__ -D__SSE__ -D__SSE2__ -D__SSE3__ -D__SSSE3__ -D__SSE4_1__ -D__SSE4_2__ -D__AVX__ -D__XSAVE__ -D__POPCNT__ -D__FXSR__ -D__PGI -D__NVCOMPILER -D_PGCG_SOURCE --c -I- -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include-gcc48 -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include-gcc48 -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include -I/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include -I/usr/local/include -I/usr/include -D__PGLLVM__ -D__NVCOMPILER_LLVM__ -D__extension__= --preinclude _cplus_preinclude.h --preinclude_macros _cplus_macros.h --gnu_version=40805 -D__pgnu_vsn=40805 -q -o /tmp/nvcJQDrPF_Nr4l2.il /usr/share/cmake3/Modules/CMakeCCompilerABI.c
+
+/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/tools/cpp2 /usr/share/cmake3/Modules/CMakeCCompilerABI.c -opt 1 -x 119 0xa10000 -x 122 0x40 -x 123 0x1000 -x 127 4 -x 127 17 -x 19 0x400000 -x 28 0x40000 -x 120 0x10000000 -x 70 0x8000 -x 122 1 -x 125 0x20000 -quad -x 59 4 -tp sandybridge -x 120 0x1000 -astype 0 -x 121 1 -fn /usr/share/cmake3/Modules/CMakeCCompilerABI.c -il /tmp/nvcJQDrPF_Nr4l2.il -x 123 0x80000000 -x 123 4 -x 2 0x400 -x 119 0x20 -def __pgnu_vsn=40805 -x 70 0x40000000 -x 183 4 -x 121 0x800 -x 6 0x20000 -x 122 0x400000 -y 125 0x100000 -x 249 110 -x 120 0x200000 -x 70 0x40000000 -x 8 0x40000000 -x 164 0x800000 -x 85 0x2000 -x 85 0x4000 -x 34 0x40000000 -x 53 0x800000 -x 68 0x1 -x 39 4 -x 56 0x10 -x 26 0x10 -x 26 1 -x 56 0x4000 -y 163 0xc0000000 -x 189 0x10 -y 189 0x4000000 -gnuvsn 40805 -x 69 0x200 -x 123 0x400 -cmdline '+pgcc /tmp/nvcJQDrPF_Nr4l2.il -v -o CMakeFiles/cmTC_7cee6.dir/CMakeCCompilerABI.c.o -c' -asm /tmp/nvctQDr5cg5eOID.ll
+NVC++/x86-64 Linux 21.5-0: compilation successful
+
+/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/share/llvm/bin/llc /tmp/nvctQDr5cg5eOID.ll -march=x86-64 -mcpu=native -O1 -fast-isel=0 -non-global-value-max-name-size=4294967295 -x86-cmov-converter=0 --frame-pointer=none -o /tmp/nvcRQDrbAwxWstI.s
+
+/usr/bin/as /tmp/nvcRQDrbAwxWstI.s -o CMakeFiles/cmTC_7cee6.dir/CMakeCCompilerABI.c.o
+Unlinking /tmp/nvcJQDrPF_Nr4l2.il
+Unlinking /tmp/nvc7QDrXCsf02hy.s
+Unlinking /tmp/nvctQDr5cg5eOID.ll
+Unlinking /tmp/nvcRQDrbAwxWstI.s
+Unlinking /tmp/nvcdQDrjQPtnImz.llvm
+Linking C executable cmTC_7cee6
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_7cee6.dir/link.txt --verbose=1
+/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/pgcc     -v CMakeFiles/cmTC_7cee6.dir/CMakeCCompilerABI.c.o  -o cmTC_7cee6 
+Export NVCOMPILER=/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5
+Export PGI=/home/ewa19/RISM/hpc_sdk
+
+/usr/bin/ld /usr/lib64/crt1.o /usr/lib64/crti.o /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/trace_init.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/nvhpc.ld -L/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib -L/usr/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 CMakeFiles/cmTC_7cee6.dir/CMakeCCompilerABI.c.o -rpath /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib -rpath /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -o cmTC_7cee6 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -lnvomp -ldl --as-needed -lnvhpcatm --no-as-needed -lpthread --start-group -lnvcpumath -lnsnvc -lnvc --end-group -lm -lgcc -lc -lgcc -lgcc_s /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib64/crtn.o
+gmake[1]: Leaving directory `/home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=start
+  warn: unable to parse implicit include dirs!
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_7cee6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7cee6.dir/build.make CMakeFiles/cmTC_7cee6.dir/build]
+  ignore line: [gmake[1]: Entering directory `/home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_7cee6.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/pgcc   -v -o CMakeFiles/cmTC_7cee6.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake3/Modules/CMakeCCompilerABI.c]
+  ignore line: [Export NVCOMPILER=/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5]
+  ignore line: [Export PGI=/home/ewa19/RISM/hpc_sdk]
+  ignore line: []
+  ignore line: [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/tools/cpp1 --llalign -Dunix -D__unix -D__unix__ -Dlinux -D__linux -D__linux__ -D__NO_MATH_INLINES -D__LP64__ -D__x86_64 -D__x86_64__ -D__LONG_MAX__=9223372036854775807L '-D__SIZE_TYPE__=unsigned long int' '-D__PTRDIFF_TYPE__=long int' -D__amd64 -D__amd64__ -D__k8 -D__k8__ -D__MMX__ -D__SSE__ -D__SSE2__ -D__SSE3__ -D__SSSE3__ -D__SSE4_1__ -D__SSE4_2__ -D__AVX__ -D__XSAVE__ -D__POPCNT__ -D__FXSR__ -D__PGI -D__NVCOMPILER -D_PGCG_SOURCE --c -I- -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include-gcc48 -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include-gcc48 -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include -I/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include -I/usr/local/include -I/usr/include -D__PGLLVM__ -D__NVCOMPILER_LLVM__ -D__extension__= --preinclude _cplus_preinclude.h --preinclude_macros _cplus_macros.h --gnu_version=40805 -D__pgnu_vsn=40805 -q -o /tmp/nvcJQDrPF_Nr4l2.il /usr/share/cmake3/Modules/CMakeCCompilerABI.c]
+  ignore line: []
+  ignore line: [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/tools/cpp2 /usr/share/cmake3/Modules/CMakeCCompilerABI.c -opt 1 -x 119 0xa10000 -x 122 0x40 -x 123 0x1000 -x 127 4 -x 127 17 -x 19 0x400000 -x 28 0x40000 -x 120 0x10000000 -x 70 0x8000 -x 122 1 -x 125 0x20000 -quad -x 59 4 -tp sandybridge -x 120 0x1000 -astype 0 -x 121 1 -fn /usr/share/cmake3/Modules/CMakeCCompilerABI.c -il /tmp/nvcJQDrPF_Nr4l2.il -x 123 0x80000000 -x 123 4 -x 2 0x400 -x 119 0x20 -def __pgnu_vsn=40805 -x 70 0x40000000 -x 183 4 -x 121 0x800 -x 6 0x20000 -x 122 0x400000 -y 125 0x100000 -x 249 110 -x 120 0x200000 -x 70 0x40000000 -x 8 0x40000000 -x 164 0x800000 -x 85 0x2000 -x 85 0x4000 -x 34 0x40000000 -x 53 0x800000 -x 68 0x1 -x 39 4 -x 56 0x10 -x 26 0x10 -x 26 1 -x 56 0x4000 -y 163 0xc0000000 -x 189 0x10 -y 189 0x4000000 -gnuvsn 40805 -x 69 0x200 -x 123 0x400 -cmdline '+pgcc /tmp/nvcJQDrPF_Nr4l2.il -v -o CMakeFiles/cmTC_7cee6.dir/CMakeCCompilerABI.c.o -c' -asm /tmp/nvctQDr5cg5eOID.ll]
+  ignore line: [NVC++/x86-64 Linux 21.5-0: compilation successful]
+  ignore line: []
+  ignore line: [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/share/llvm/bin/llc /tmp/nvctQDr5cg5eOID.ll -march=x86-64 -mcpu=native -O1 -fast-isel=0 -non-global-value-max-name-size=4294967295 -x86-cmov-converter=0 --frame-pointer=none -o /tmp/nvcRQDrbAwxWstI.s]
+  ignore line: []
+  ignore line: [/usr/bin/as /tmp/nvcRQDrbAwxWstI.s -o CMakeFiles/cmTC_7cee6.dir/CMakeCCompilerABI.c.o]
+  ignore line: [Unlinking /tmp/nvcJQDrPF_Nr4l2.il]
+  ignore line: [Unlinking /tmp/nvc7QDrXCsf02hy.s]
+  ignore line: [Unlinking /tmp/nvctQDr5cg5eOID.ll]
+  ignore line: [Unlinking /tmp/nvcRQDrbAwxWstI.s]
+  ignore line: [Unlinking /tmp/nvcdQDrjQPtnImz.llvm]
+  ignore line: [Linking C executable cmTC_7cee6]
+  ignore line: [/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_7cee6.dir/link.txt --verbose=1]
+  ignore line: [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/pgcc     -v CMakeFiles/cmTC_7cee6.dir/CMakeCCompilerABI.c.o  -o cmTC_7cee6 ]
+  ignore line: [Export NVCOMPILER=/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5]
+  ignore line: [Export PGI=/home/ewa19/RISM/hpc_sdk]
+  ignore line: []
+  link line: [/usr/bin/ld /usr/lib64/crt1.o /usr/lib64/crti.o /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/trace_init.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/nvhpc.ld -L/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib -L/usr/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 CMakeFiles/cmTC_7cee6.dir/CMakeCCompilerABI.c.o -rpath /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib -rpath /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -o cmTC_7cee6 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -lnvomp -ldl --as-needed -lnvhpcatm --no-as-needed -lpthread --start-group -lnvcpumath -lnsnvc -lnvc --end-group -lm -lgcc -lc -lgcc -lgcc_s /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib64/crtn.o]
+    arg [/usr/bin/ld] ==> ignore
+    arg [/usr/lib64/crt1.o] ==> ignore
+    arg [/usr/lib64/crti.o] ==> ignore
+    arg [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/trace_init.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/nvhpc.ld] ==> ignore
+    arg [-L/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib] ==> dir [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib]
+    arg [-L/usr/lib64] ==> dir [/usr/lib64]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5]
+    arg [CMakeFiles/cmTC_7cee6.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_7cee6] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64]
+    arg [-lnvomp] ==> lib [nvomp]
+    arg [-ldl] ==> lib [dl]
+    arg [--as-needed] ==> ignore
+    arg [-lnvhpcatm] ==> lib [nvhpcatm]
+    arg [--no-as-needed] ==> ignore
+    arg [-lpthread] ==> lib [pthread]
+    arg [--start-group] ==> ignore
+    arg [-lnvcpumath] ==> lib [nvcpumath]
+    arg [-lnsnvc] ==> lib [nsnvc]
+    arg [-lnvc] ==> lib [nvc]
+    arg [--end-group] ==> ignore
+    arg [-lm] ==> lib [m]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o] ==> ignore
+    arg [/usr/lib64/crtn.o] ==> ignore
+  collapse library dir [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib] ==> [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib]
+  collapse library dir [/usr/lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5] ==> [/usr/lib/gcc/x86_64-redhat-linux/4.8.5]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64] ==> [/usr/lib64]
+  implicit libs: [nvomp;dl;nvhpcatm;pthread;nvcpumath;nsnvc;nvc;m;gcc;c;gcc;gcc_s]
+  implicit dirs: [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib;/usr/lib64;/usr/lib/gcc/x86_64-redhat-linux/4.8.5]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_590ab/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_590ab.dir/build.make CMakeFiles/cmTC_590ab.dir/build
+gmake[1]: Entering directory `/home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_590ab.dir/testCXXCompiler.cxx.o
+/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/pgc++     -o CMakeFiles/cmTC_590ab.dir/testCXXCompiler.cxx.o -c /home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_590ab
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_590ab.dir/link.txt --verbose=1
+/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/pgc++       CMakeFiles/cmTC_590ab.dir/testCXXCompiler.cxx.o  -o cmTC_590ab 
+gmake[1]: Leaving directory `/home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_3c8b0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3c8b0.dir/build.make CMakeFiles/cmTC_3c8b0.dir/build
+gmake[1]: Entering directory `/home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3c8b0.dir/CMakeCXXCompilerABI.cpp.o
+/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/pgc++    -v -o CMakeFiles/cmTC_3c8b0.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake3/Modules/CMakeCXXCompilerABI.cpp
+Export NVCOMPILER=/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5
+Export PGI=/home/ewa19/RISM/hpc_sdk
+
+/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/tools/cpp1 --llalign -Dunix -D__unix -D__unix__ -Dlinux -D__linux -D__linux__ -D__NO_MATH_INLINES -D__LP64__ -D__x86_64 -D__x86_64__ -D__LONG_MAX__=9223372036854775807L '-D__SIZE_TYPE__=unsigned long int' '-D__PTRDIFF_TYPE__=long int' -D__amd64 -D__amd64__ -D__k8 -D__k8__ -D__MMX__ -D__SSE__ -D__SSE2__ -D__SSE3__ -D__SSSE3__ -D__SSE4_1__ -D__SSE4_2__ -D__AVX__ -D__XSAVE__ -D__POPCNT__ -D__FXSR__ -D__PGI -D__NVCOMPILER -D_GNU_SOURCE -D_PGCG_SOURCE -I- -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include-gcc48 -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include -I/usr/include/c++/4.8.5 -I/usr/include/c++/4.8.5/x86_64-redhat-linux -I/usr/include/c++/4.8.5/backward -I/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include -I/usr/local/include -I/usr/include -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include-gcc48 -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include -I/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include -I/usr/local/include -I/usr/include -D__PGLLVM__ -D__NVCOMPILER_LLVM__ -D__extension__= --preinclude _cplus_preinclude.h --preinclude_macros _cplus_macros.h --gnu_version=40805 -D__pgnu_vsn=40805 -q -o /tmp/nvc++ndErN832WCiT.il /usr/share/cmake3/Modules/CMakeCXXCompilerABI.cpp
+
+/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/tools/cpp2 /usr/share/cmake3/Modules/CMakeCXXCompilerABI.cpp -opt 1 -x 119 0xa10000 -x 122 0x40 -x 123 0x1000 -x 127 4 -x 127 17 -x 19 0x400000 -x 28 0x40000 -x 120 0x10000000 -x 70 0x8000 -x 122 1 -x 125 0x20000 -quad -x 59 4 -tp sandybridge -x 120 0x1000 -astype 0 -x 121 1 -fn /usr/share/cmake3/Modules/CMakeCXXCompilerABI.cpp -il /tmp/nvc++ndErN832WCiT.il -x 117 0x200 -x 123 0x80000000 -x 123 4 -x 119 0x20 -def __pgnu_vsn=40805 -x 70 0x40000000 -x 183 4 -x 121 0x800 -x 6 0x20000 -x 249 110 -x 120 0x200000 -x 70 0x40000000 -x 8 0x40000000 -x 164 0x800000 -x 85 0x2000 -x 85 0x4000 -x 34 0x40000000 -x 53 0x800000 -x 68 0x1 -x 39 4 -x 56 0x10 -x 26 0x10 -x 26 1 -x 56 0x4000 -y 163 0xc0000000 -x 189 0x10 -y 189 0x4000000 -gnuvsn 40805 -x 69 0x200 -x 123 0x400 -cmdline '+pgc++ /tmp/nvc++ndErN832WCiT.il -v -o CMakeFiles/cmTC_3c8b0.dir/CMakeCXXCompilerABI.cpp.o -c' -asm /tmp/nvc++DdErxTZ5SPua.ll
+NVC++/x86-64 Linux 21.5-0: compilation successful
+
+/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/share/llvm/bin/llc /tmp/nvc++DdErxTZ5SPua.ll -march=x86-64 -mcpu=native -O1 -fast-isel=0 -non-global-value-max-name-size=4294967295 -x86-cmov-converter=0 --frame-pointer=none -o /tmp/nvc++fdErpyXkyvBN.s
+
+/usr/bin/as /tmp/nvc++fdErpyXkyvBN.s -o CMakeFiles/cmTC_3c8b0.dir/CMakeCXXCompilerABI.cpp.o
+Unlinking /tmp/nvc++ndErN832WCiT.il
+Unlinking /tmp/nvc++1dErFHxO8fPt.s
+Unlinking /tmp/nvc++DdErxTZ5SPua.ll
+Unlinking /tmp/nvc++fdErpyXkyvBN.s
+Unlinking /tmp/nvc++TdErhAC3DtAl.llvm
+Linking CXX executable cmTC_3c8b0
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_3c8b0.dir/link.txt --verbose=1
+/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/pgc++      -v CMakeFiles/cmTC_3c8b0.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_3c8b0 
+Export NVCOMPILER=/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5
+Export PGI=/home/ewa19/RISM/hpc_sdk
+
+/usr/bin/ld /usr/lib64/crt1.o /usr/lib64/crti.o /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/trace_init.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/nvhpc.ld -L/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib -L/usr/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 CMakeFiles/cmTC_3c8b0.dir/CMakeCXXCompilerABI.cpp.o -rpath /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib -rpath /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -o cmTC_3c8b0 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -lnvhpcatm -lstdc++ -lnvomp -ldl --as-needed -lnvhpcatm --no-as-needed -lpthread --start-group -lnvcpumath -lnsnvc -lnvc --end-group -lm -lgcc -lc -lgcc -lgcc_s /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib64/crtn.o
+gmake[1]: Leaving directory `/home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=start
+  warn: unable to parse implicit include dirs!
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_3c8b0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3c8b0.dir/build.make CMakeFiles/cmTC_3c8b0.dir/build]
+  ignore line: [gmake[1]: Entering directory `/home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_3c8b0.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/pgc++    -v -o CMakeFiles/cmTC_3c8b0.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake3/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Export NVCOMPILER=/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5]
+  ignore line: [Export PGI=/home/ewa19/RISM/hpc_sdk]
+  ignore line: []
+  ignore line: [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/tools/cpp1 --llalign -Dunix -D__unix -D__unix__ -Dlinux -D__linux -D__linux__ -D__NO_MATH_INLINES -D__LP64__ -D__x86_64 -D__x86_64__ -D__LONG_MAX__=9223372036854775807L '-D__SIZE_TYPE__=unsigned long int' '-D__PTRDIFF_TYPE__=long int' -D__amd64 -D__amd64__ -D__k8 -D__k8__ -D__MMX__ -D__SSE__ -D__SSE2__ -D__SSE3__ -D__SSSE3__ -D__SSE4_1__ -D__SSE4_2__ -D__AVX__ -D__XSAVE__ -D__POPCNT__ -D__FXSR__ -D__PGI -D__NVCOMPILER -D_GNU_SOURCE -D_PGCG_SOURCE -I- -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include-gcc48 -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include -I/usr/include/c++/4.8.5 -I/usr/include/c++/4.8.5/x86_64-redhat-linux -I/usr/include/c++/4.8.5/backward -I/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include -I/usr/local/include -I/usr/include -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include-gcc48 -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include -I/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include -I/usr/local/include -I/usr/include -D__PGLLVM__ -D__NVCOMPILER_LLVM__ -D__extension__= --preinclude _cplus_preinclude.h --preinclude_macros _cplus_macros.h --gnu_version=40805 -D__pgnu_vsn=40805 -q -o /tmp/nvc++ndErN832WCiT.il /usr/share/cmake3/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: []
+  ignore line: [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/tools/cpp2 /usr/share/cmake3/Modules/CMakeCXXCompilerABI.cpp -opt 1 -x 119 0xa10000 -x 122 0x40 -x 123 0x1000 -x 127 4 -x 127 17 -x 19 0x400000 -x 28 0x40000 -x 120 0x10000000 -x 70 0x8000 -x 122 1 -x 125 0x20000 -quad -x 59 4 -tp sandybridge -x 120 0x1000 -astype 0 -x 121 1 -fn /usr/share/cmake3/Modules/CMakeCXXCompilerABI.cpp -il /tmp/nvc++ndErN832WCiT.il -x 117 0x200 -x 123 0x80000000 -x 123 4 -x 119 0x20 -def __pgnu_vsn=40805 -x 70 0x40000000 -x 183 4 -x 121 0x800 -x 6 0x20000 -x 249 110 -x 120 0x200000 -x 70 0x40000000 -x 8 0x40000000 -x 164 0x800000 -x 85 0x2000 -x 85 0x4000 -x 34 0x40000000 -x 53 0x800000 -x 68 0x1 -x 39 4 -x 56 0x10 -x 26 0x10 -x 26 1 -x 56 0x4000 -y 163 0xc0000000 -x 189 0x10 -y 189 0x4000000 -gnuvsn 40805 -x 69 0x200 -x 123 0x400 -cmdline '+pgc++ /tmp/nvc++ndErN832WCiT.il -v -o CMakeFiles/cmTC_3c8b0.dir/CMakeCXXCompilerABI.cpp.o -c' -asm /tmp/nvc++DdErxTZ5SPua.ll]
+  ignore line: [NVC++/x86-64 Linux 21.5-0: compilation successful]
+  ignore line: []
+  ignore line: [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/share/llvm/bin/llc /tmp/nvc++DdErxTZ5SPua.ll -march=x86-64 -mcpu=native -O1 -fast-isel=0 -non-global-value-max-name-size=4294967295 -x86-cmov-converter=0 --frame-pointer=none -o /tmp/nvc++fdErpyXkyvBN.s]
+  ignore line: []
+  ignore line: [/usr/bin/as /tmp/nvc++fdErpyXkyvBN.s -o CMakeFiles/cmTC_3c8b0.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [Unlinking /tmp/nvc++ndErN832WCiT.il]
+  ignore line: [Unlinking /tmp/nvc++1dErFHxO8fPt.s]
+  ignore line: [Unlinking /tmp/nvc++DdErxTZ5SPua.ll]
+  ignore line: [Unlinking /tmp/nvc++fdErpyXkyvBN.s]
+  ignore line: [Unlinking /tmp/nvc++TdErhAC3DtAl.llvm]
+  ignore line: [Linking CXX executable cmTC_3c8b0]
+  ignore line: [/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_3c8b0.dir/link.txt --verbose=1]
+  ignore line: [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/pgc++      -v CMakeFiles/cmTC_3c8b0.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_3c8b0 ]
+  ignore line: [Export NVCOMPILER=/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5]
+  ignore line: [Export PGI=/home/ewa19/RISM/hpc_sdk]
+  ignore line: []
+  link line: [/usr/bin/ld /usr/lib64/crt1.o /usr/lib64/crti.o /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/trace_init.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/nvhpc.ld -L/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib -L/usr/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 CMakeFiles/cmTC_3c8b0.dir/CMakeCXXCompilerABI.cpp.o -rpath /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib -rpath /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -o cmTC_3c8b0 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -lnvhpcatm -lstdc++ -lnvomp -ldl --as-needed -lnvhpcatm --no-as-needed -lpthread --start-group -lnvcpumath -lnsnvc -lnvc --end-group -lm -lgcc -lc -lgcc -lgcc_s /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib64/crtn.o]
+    arg [/usr/bin/ld] ==> ignore
+    arg [/usr/lib64/crt1.o] ==> ignore
+    arg [/usr/lib64/crti.o] ==> ignore
+    arg [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/trace_init.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/nvhpc.ld] ==> ignore
+    arg [-L/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib] ==> dir [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib]
+    arg [-L/usr/lib64] ==> dir [/usr/lib64]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5]
+    arg [CMakeFiles/cmTC_3c8b0.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_3c8b0] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64]
+    arg [-lnvhpcatm] ==> lib [nvhpcatm]
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lnvomp] ==> lib [nvomp]
+    arg [-ldl] ==> lib [dl]
+    arg [--as-needed] ==> ignore
+    arg [-lnvhpcatm] ==> lib [nvhpcatm]
+    arg [--no-as-needed] ==> ignore
+    arg [-lpthread] ==> lib [pthread]
+    arg [--start-group] ==> ignore
+    arg [-lnvcpumath] ==> lib [nvcpumath]
+    arg [-lnsnvc] ==> lib [nsnvc]
+    arg [-lnvc] ==> lib [nvc]
+    arg [--end-group] ==> ignore
+    arg [-lm] ==> lib [m]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o] ==> ignore
+    arg [/usr/lib64/crtn.o] ==> ignore
+  collapse library dir [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib] ==> [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib]
+  collapse library dir [/usr/lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5] ==> [/usr/lib/gcc/x86_64-redhat-linux/4.8.5]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64] ==> [/usr/lib64]
+  implicit libs: [nvhpcatm;stdc++;nvomp;dl;nvhpcatm;pthread;nvcpumath;nsnvc;nvc;m;gcc;c;gcc;gcc_s]
+  implicit dirs: [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib;/usr/lib64;/usr/lib/gcc/x86_64-redhat-linux/4.8.5]
+  implicit fwks: []
+
+
+Detecting C OpenMP compiler ABI info compiled with the following output:
+Change Dir: /home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_25ad5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_25ad5.dir/build.make CMakeFiles/cmTC_25ad5.dir/build
+gmake[1]: Entering directory `/home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_25ad5.dir/OpenMPTryFlag.c.o
+/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/pgcc   -mp -v   -o CMakeFiles/cmTC_25ad5.dir/OpenMPTryFlag.c.o   -c /home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Export NVCOMPILER=/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5
+Export PGI=/home/ewa19/RISM/hpc_sdk
+
+/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/tools/cpp1 --llalign -Dunix -D__unix -D__unix__ -Dlinux -D__linux -D__linux__ -D__NO_MATH_INLINES -D__LP64__ -D__x86_64 -D__x86_64__ -D__LONG_MAX__=9223372036854775807L '-D__SIZE_TYPE__=unsigned long int' '-D__PTRDIFF_TYPE__=long int' -D__amd64 -D__amd64__ -D__k8 -D__k8__ -D__MMX__ -D__SSE__ -D__SSE2__ -D__SSE3__ -D__SSSE3__ -D__SSE4_1__ -D__SSE4_2__ -D__AVX__ -D__XSAVE__ -D__POPCNT__ -D__FXSR__ -D__PGI -D__NVCOMPILER -D_PGCG_SOURCE --c -I- -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include-gcc48 -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include-gcc48 -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include -I/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include -I/usr/local/include -I/usr/include -D__PGLLVM__ -D__NVCOMPILER_LLVM__ -D__extension__= -DPGI_TESLA_TARGET --preinclude _cplus_preinclude.h --preinclude_macros _cplus_macros.h --gnu_version=40805 -D__pgnu_vsn=40805 --mp -D_OPENMP=202011 -q -o /tmp/nvcicFry7A6qfLK.il /home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+
+/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/tools/cpp2 /home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -opt 1 -x 119 0xa10000 -x 122 0x40 -x 123 0x1000 -x 127 4 -x 127 17 -x 19 0x400000 -x 28 0x40000 -x 120 0x10000000 -x 70 0x8000 -x 122 1 -x 125 0x20000 -quad -x 59 4 -tp sandybridge -x 120 0x1000 -astype 0 -x 121 1 -fn /home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -il /tmp/nvcicFry7A6qfLK.il -x 123 0x80000000 -x 123 4 -x 2 0x400 -x 119 0x20 -def __pgnu_vsn=40805 -x 70 0x40000000 -x 183 4 -x 121 0x800 -x 6 0x20000 -x 122 0x400000 -y 125 0x100000 -x 249 110 -x 120 0x200000 -x 70 0x40000000 -x 8 0x40000000 -x 164 0x800000 -x 85 0x2000 -x 85 0x4000 -x 34 0x40000000 -x 53 0x800000 -x 68 0x1 -x 39 4 -x 56 0x10 -x 26 0x10 -x 26 1 -x 56 0x4000 -y 163 0xc0000000 -x 189 0x10 -y 189 0x4000000 -mp -x 69 0x200 -x 69 0x400 -x 69 2 -gnuvsn 40805 -x 69 0x200 -x 123 0x400 -x 180 0x4000000 -cmdline '+pgcc /tmp/nvcicFry7A6qfLK.il -mp -v -o CMakeFiles/cmTC_25ad5.dir/OpenMPTryFlag.c.o -c' -asm /tmp/nvcicFryjfeSS6J.ll
+NVC++/x86-64 Linux 21.5-0: compilation successful
+
+/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/share/llvm/bin/llc /tmp/nvcicFryjfeSS6J.ll -march=x86-64 -mcpu=native -O1 -fast-isel=0 -non-global-value-max-name-size=4294967295 -x86-cmov-converter=0 --frame-pointer=none -o /tmp/nvcicFryuUOlr-b.s
+
+/usr/bin/as /tmp/nvcicFryuUOlr-b.s -o CMakeFiles/cmTC_25ad5.dir/OpenMPTryFlag.c.o
+Unlinking /tmp/nvcicFry7A6qfLK.il
+Unlinking /tmp/nvcicFrywYruYIA.s
+Unlinking /tmp/nvcicFryjfeSS6J.ll
+Unlinking /tmp/nvcicFryuUOlr-b.s
+Unlinking /tmp/nvcicFry3GsUnxS.llvm
+Linking C executable cmTC_25ad5
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_25ad5.dir/link.txt --verbose=1
+/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/pgcc  -mp -v    CMakeFiles/cmTC_25ad5.dir/OpenMPTryFlag.c.o  -o cmTC_25ad5  -v 
+Export NVCOMPILER=/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5
+Export PGI=/home/ewa19/RISM/hpc_sdk
+
+/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/tools/acclnk -v /usr/bin/ld /usr/lib64/crt1.o /usr/lib64/crti.o /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/trace_init.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/nvhpc.ld -L/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib -L/usr/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 CMakeFiles/cmTC_25ad5.dir/OpenMPTryFlag.c.o -rpath /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib -rpath /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -o cmTC_25ad5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -lacchost -ldl -lnvomp -ldl --as-needed -lnvhpcatm --no-as-needed -lpthread --start-group -lnvcpumath -lnsnvc -lnvc --end-group -lm -lgcc -lc -lgcc -lgcc_s /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib64/crtn.o
+/usr/bin/ld /usr/lib64/crt1.o /usr/lib64/crti.o /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/trace_init.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/nvhpc.ld -L/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib -L/usr/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 CMakeFiles/cmTC_25ad5.dir/OpenMPTryFlag.c.o -rpath /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib -rpath /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -o cmTC_25ad5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -lacchost -ldl -lnvomp -ldl --as-needed -lnvhpcatm --no-as-needed -lpthread --start-group -lnvcpumath -lnsnvc -lnvc --end-group -lm -lgcc -lc -lgcc -lgcc_s /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib64/crtn.o
+gmake[1]: Leaving directory `/home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C OpenMP implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_25ad5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_25ad5.dir/build.make CMakeFiles/cmTC_25ad5.dir/build]
+  ignore line: [gmake[1]: Entering directory `/home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_25ad5.dir/OpenMPTryFlag.c.o]
+  ignore line: [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/pgcc   -mp -v   -o CMakeFiles/cmTC_25ad5.dir/OpenMPTryFlag.c.o   -c /home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c]
+  ignore line: [Export NVCOMPILER=/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5]
+  ignore line: [Export PGI=/home/ewa19/RISM/hpc_sdk]
+  ignore line: []
+  ignore line: [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/tools/cpp1 --llalign -Dunix -D__unix -D__unix__ -Dlinux -D__linux -D__linux__ -D__NO_MATH_INLINES -D__LP64__ -D__x86_64 -D__x86_64__ -D__LONG_MAX__=9223372036854775807L '-D__SIZE_TYPE__=unsigned long int' '-D__PTRDIFF_TYPE__=long int' -D__amd64 -D__amd64__ -D__k8 -D__k8__ -D__MMX__ -D__SSE__ -D__SSE2__ -D__SSE3__ -D__SSSE3__ -D__SSE4_1__ -D__SSE4_2__ -D__AVX__ -D__XSAVE__ -D__POPCNT__ -D__FXSR__ -D__PGI -D__NVCOMPILER -D_PGCG_SOURCE --c -I- -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include-gcc48 -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include-gcc48 -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include -I/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include -I/usr/local/include -I/usr/include -D__PGLLVM__ -D__NVCOMPILER_LLVM__ -D__extension__= -DPGI_TESLA_TARGET --preinclude _cplus_preinclude.h --preinclude_macros _cplus_macros.h --gnu_version=40805 -D__pgnu_vsn=40805 --mp -D_OPENMP=202011 -q -o /tmp/nvcicFry7A6qfLK.il /home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c]
+  ignore line: []
+  ignore line: [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/tools/cpp2 /home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -opt 1 -x 119 0xa10000 -x 122 0x40 -x 123 0x1000 -x 127 4 -x 127 17 -x 19 0x400000 -x 28 0x40000 -x 120 0x10000000 -x 70 0x8000 -x 122 1 -x 125 0x20000 -quad -x 59 4 -tp sandybridge -x 120 0x1000 -astype 0 -x 121 1 -fn /home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -il /tmp/nvcicFry7A6qfLK.il -x 123 0x80000000 -x 123 4 -x 2 0x400 -x 119 0x20 -def __pgnu_vsn=40805 -x 70 0x40000000 -x 183 4 -x 121 0x800 -x 6 0x20000 -x 122 0x400000 -y 125 0x100000 -x 249 110 -x 120 0x200000 -x 70 0x40000000 -x 8 0x40000000 -x 164 0x800000 -x 85 0x2000 -x 85 0x4000 -x 34 0x40000000 -x 53 0x800000 -x 68 0x1 -x 39 4 -x 56 0x10 -x 26 0x10 -x 26 1 -x 56 0x4000 -y 163 0xc0000000 -x 189 0x10 -y 189 0x4000000 -mp -x 69 0x200 -x 69 0x400 -x 69 2 -gnuvsn 40805 -x 69 0x200 -x 123 0x400 -x 180 0x4000000 -cmdline '+pgcc /tmp/nvcicFry7A6qfLK.il -mp -v -o CMakeFiles/cmTC_25ad5.dir/OpenMPTryFlag.c.o -c' -asm /tmp/nvcicFryjfeSS6J.ll]
+  ignore line: [NVC++/x86-64 Linux 21.5-0: compilation successful]
+  ignore line: []
+  ignore line: [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/share/llvm/bin/llc /tmp/nvcicFryjfeSS6J.ll -march=x86-64 -mcpu=native -O1 -fast-isel=0 -non-global-value-max-name-size=4294967295 -x86-cmov-converter=0 --frame-pointer=none -o /tmp/nvcicFryuUOlr-b.s]
+  ignore line: []
+  ignore line: [/usr/bin/as /tmp/nvcicFryuUOlr-b.s -o CMakeFiles/cmTC_25ad5.dir/OpenMPTryFlag.c.o]
+  ignore line: [Unlinking /tmp/nvcicFry7A6qfLK.il]
+  ignore line: [Unlinking /tmp/nvcicFrywYruYIA.s]
+  ignore line: [Unlinking /tmp/nvcicFryjfeSS6J.ll]
+  ignore line: [Unlinking /tmp/nvcicFryuUOlr-b.s]
+  ignore line: [Unlinking /tmp/nvcicFry3GsUnxS.llvm]
+  ignore line: [Linking C executable cmTC_25ad5]
+  ignore line: [/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_25ad5.dir/link.txt --verbose=1]
+  ignore line: [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/pgcc  -mp -v    CMakeFiles/cmTC_25ad5.dir/OpenMPTryFlag.c.o  -o cmTC_25ad5  -v ]
+  ignore line: [Export NVCOMPILER=/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5]
+  ignore line: [Export PGI=/home/ewa19/RISM/hpc_sdk]
+  ignore line: []
+  ignore line: [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/tools/acclnk -v /usr/bin/ld /usr/lib64/crt1.o /usr/lib64/crti.o /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/trace_init.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/nvhpc.ld -L/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib -L/usr/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 CMakeFiles/cmTC_25ad5.dir/OpenMPTryFlag.c.o -rpath /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib -rpath /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -o cmTC_25ad5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -lacchost -ldl -lnvomp -ldl --as-needed -lnvhpcatm --no-as-needed -lpthread --start-group -lnvcpumath -lnsnvc -lnvc --end-group -lm -lgcc -lc -lgcc -lgcc_s /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib64/crtn.o]
+  link line: [/usr/bin/ld /usr/lib64/crt1.o /usr/lib64/crti.o /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/trace_init.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/nvhpc.ld -L/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib -L/usr/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 CMakeFiles/cmTC_25ad5.dir/OpenMPTryFlag.c.o -rpath /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib -rpath /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -o cmTC_25ad5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -lacchost -ldl -lnvomp -ldl --as-needed -lnvhpcatm --no-as-needed -lpthread --start-group -lnvcpumath -lnsnvc -lnvc --end-group -lm -lgcc -lc -lgcc -lgcc_s /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib64/crtn.o]
+    arg [/usr/bin/ld] ==> ignore
+    arg [/usr/lib64/crt1.o] ==> ignore
+    arg [/usr/lib64/crti.o] ==> ignore
+    arg [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/trace_init.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/nvhpc.ld] ==> ignore
+    arg [-L/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib] ==> dir [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib]
+    arg [-L/usr/lib64] ==> dir [/usr/lib64]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5]
+    arg [CMakeFiles/cmTC_25ad5.dir/OpenMPTryFlag.c.o] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_25ad5] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64]
+    arg [-lacchost] ==> lib [acchost]
+    arg [-ldl] ==> lib [dl]
+    arg [-lnvomp] ==> lib [nvomp]
+    arg [-ldl] ==> lib [dl]
+    arg [--as-needed] ==> ignore
+    arg [-lnvhpcatm] ==> lib [nvhpcatm]
+    arg [--no-as-needed] ==> ignore
+    arg [-lpthread] ==> lib [pthread]
+    arg [--start-group] ==> ignore
+    arg [-lnvcpumath] ==> lib [nvcpumath]
+    arg [-lnsnvc] ==> lib [nsnvc]
+    arg [-lnvc] ==> lib [nvc]
+    arg [--end-group] ==> ignore
+    arg [-lm] ==> lib [m]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o] ==> ignore
+    arg [/usr/lib64/crtn.o] ==> ignore
+  collapse library dir [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib] ==> [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib]
+  collapse library dir [/usr/lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5] ==> [/usr/lib/gcc/x86_64-redhat-linux/4.8.5]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64] ==> [/usr/lib64]
+  implicit libs: [acchost;dl;nvomp;dl;nvhpcatm;pthread;nvcpumath;nsnvc;nvc;m;gcc;c;gcc;gcc_s]
+  implicit dirs: [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib;/usr/lib64;/usr/lib/gcc/x86_64-redhat-linux/4.8.5]
+  implicit fwks: []
+
+
+Detecting CXX OpenMP compiler ABI info compiled with the following output:
+Change Dir: /home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_b794c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b794c.dir/build.make CMakeFiles/cmTC_b794c.dir/build
+gmake[1]: Entering directory `/home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b794c.dir/OpenMPTryFlag.cpp.o
+/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/pgc++    -mp -v   -o CMakeFiles/cmTC_b794c.dir/OpenMPTryFlag.cpp.o -c /home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Export NVCOMPILER=/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5
+Export PGI=/home/ewa19/RISM/hpc_sdk
+
+/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/tools/cpp1 --llalign -Dunix -D__unix -D__unix__ -Dlinux -D__linux -D__linux__ -D__NO_MATH_INLINES -D__LP64__ -D__x86_64 -D__x86_64__ -D__LONG_MAX__=9223372036854775807L '-D__SIZE_TYPE__=unsigned long int' '-D__PTRDIFF_TYPE__=long int' -D__amd64 -D__amd64__ -D__k8 -D__k8__ -D__MMX__ -D__SSE__ -D__SSE2__ -D__SSE3__ -D__SSSE3__ -D__SSE4_1__ -D__SSE4_2__ -D__AVX__ -D__XSAVE__ -D__POPCNT__ -D__FXSR__ -D__PGI -D__NVCOMPILER -D_GNU_SOURCE -D_PGCG_SOURCE -I- -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include-gcc48 -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include -I/usr/include/c++/4.8.5 -I/usr/include/c++/4.8.5/x86_64-redhat-linux -I/usr/include/c++/4.8.5/backward -I/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include -I/usr/local/include -I/usr/include -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include-gcc48 -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include -I/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include -I/usr/local/include -I/usr/include -D__PGLLVM__ -D__NVCOMPILER_LLVM__ -D__extension__= -DPGI_TESLA_TARGET --preinclude _cplus_preinclude.h --preinclude_macros _cplus_macros.h --gnu_version=40805 -D__pgnu_vsn=40805 --mp -D_OPENMP=202011 -q -o /tmp/nvc++EpFrAzpq9RCe.il /home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+
+/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/tools/cpp2 /home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -opt 1 -x 119 0xa10000 -x 122 0x40 -x 123 0x1000 -x 127 4 -x 127 17 -x 19 0x400000 -x 28 0x40000 -x 120 0x10000000 -x 70 0x8000 -x 122 1 -x 125 0x20000 -quad -x 59 4 -tp sandybridge -x 120 0x1000 -astype 0 -x 121 1 -fn /home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -il /tmp/nvc++EpFrAzpq9RCe.il -x 117 0x200 -x 123 0x80000000 -x 123 4 -x 119 0x20 -def __pgnu_vsn=40805 -x 70 0x40000000 -x 183 4 -x 121 0x800 -x 6 0x20000 -x 249 110 -x 120 0x200000 -x 70 0x40000000 -x 8 0x40000000 -x 164 0x800000 -x 85 0x2000 -x 85 0x4000 -x 34 0x40000000 -x 53 0x800000 -x 68 0x1 -x 39 4 -x 56 0x10 -x 26 0x10 -x 26 1 -x 56 0x4000 -y 163 0xc0000000 -x 189 0x10 -y 189 0x4000000 -mp -x 69 0x200 -x 69 0x400 -x 69 2 -gnuvsn 40805 -x 69 0x200 -x 123 0x400 -x 180 0x4000000 -cmdline '+pgc++ /tmp/nvc++EpFrAzpq9RCe.il -mp -v -o CMakeFiles/cmTC_b794c.dir/OpenMPTryFlag.cpp.o -c' -asm /tmp/nvc++_pFr6jFHdcVb.ll
+NVC++/x86-64 Linux 21.5-0: compilation successful
+
+/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/share/llvm/bin/llc /tmp/nvc++_pFr6jFHdcVb.ll -march=x86-64 -mcpu=native -O1 -fast-isel=0 -non-global-value-max-name-size=4294967295 -x86-cmov-converter=0 --frame-pointer=none -o /tmp/nvc++UpFrkzyKAq78.s
+
+/usr/bin/as /tmp/nvc++UpFrkzyKAq78.s -o CMakeFiles/cmTC_b794c.dir/OpenMPTryFlag.cpp.o
+Unlinking /tmp/nvc++EpFrAzpq9RCe.il
+Unlinking /tmp/nvc++opFrQKkzBYTw.s
+Unlinking /tmp/nvc++_pFr6jFHdcVb.ll
+Unlinking /tmp/nvc++UpFrkzyKAq78.s
+Unlinking /tmp/nvc++EpFrAIB2P9Gk.llvm
+Linking CXX executable cmTC_b794c
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_b794c.dir/link.txt --verbose=1
+/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/pgc++   -mp -v    CMakeFiles/cmTC_b794c.dir/OpenMPTryFlag.cpp.o  -o cmTC_b794c  -v 
+Export NVCOMPILER=/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5
+Export PGI=/home/ewa19/RISM/hpc_sdk
+
+/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/tools/acclnk -v /usr/bin/ld /usr/lib64/crt1.o /usr/lib64/crti.o /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/trace_init.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/nvhpc.ld -L/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib -L/usr/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 CMakeFiles/cmTC_b794c.dir/OpenMPTryFlag.cpp.o -rpath /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib -rpath /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -o cmTC_b794c -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -lacchost -ldl -lnvhpcatm -lstdc++ -lnvomp -ldl --as-needed -lnvhpcatm --no-as-needed -lpthread --start-group -lnvcpumath -lnsnvc -lnvc --end-group -lm -lgcc -lc -lgcc -lgcc_s /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib64/crtn.o
+/usr/bin/ld /usr/lib64/crt1.o /usr/lib64/crti.o /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/trace_init.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/nvhpc.ld -L/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib -L/usr/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 CMakeFiles/cmTC_b794c.dir/OpenMPTryFlag.cpp.o -rpath /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib -rpath /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -o cmTC_b794c -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -lacchost -ldl -lnvhpcatm -lstdc++ -lnvomp -ldl --as-needed -lnvhpcatm --no-as-needed -lpthread --start-group -lnvcpumath -lnsnvc -lnvc --end-group -lm -lgcc -lc -lgcc -lgcc_s /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib64/crtn.o
+gmake[1]: Leaving directory `/home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX OpenMP implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_b794c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b794c.dir/build.make CMakeFiles/cmTC_b794c.dir/build]
+  ignore line: [gmake[1]: Entering directory `/home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_b794c.dir/OpenMPTryFlag.cpp.o]
+  ignore line: [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/pgc++    -mp -v   -o CMakeFiles/cmTC_b794c.dir/OpenMPTryFlag.cpp.o -c /home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp]
+  ignore line: [Export NVCOMPILER=/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5]
+  ignore line: [Export PGI=/home/ewa19/RISM/hpc_sdk]
+  ignore line: []
+  ignore line: [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/tools/cpp1 --llalign -Dunix -D__unix -D__unix__ -Dlinux -D__linux -D__linux__ -D__NO_MATH_INLINES -D__LP64__ -D__x86_64 -D__x86_64__ -D__LONG_MAX__=9223372036854775807L '-D__SIZE_TYPE__=unsigned long int' '-D__PTRDIFF_TYPE__=long int' -D__amd64 -D__amd64__ -D__k8 -D__k8__ -D__MMX__ -D__SSE__ -D__SSE2__ -D__SSE3__ -D__SSSE3__ -D__SSE4_1__ -D__SSE4_2__ -D__AVX__ -D__XSAVE__ -D__POPCNT__ -D__FXSR__ -D__PGI -D__NVCOMPILER -D_GNU_SOURCE -D_PGCG_SOURCE -I- -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include-gcc48 -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include -I/usr/include/c++/4.8.5 -I/usr/include/c++/4.8.5/x86_64-redhat-linux -I/usr/include/c++/4.8.5/backward -I/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include -I/usr/local/include -I/usr/include -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include-gcc48 -I/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/include -I/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include -I/usr/local/include -I/usr/include -D__PGLLVM__ -D__NVCOMPILER_LLVM__ -D__extension__= -DPGI_TESLA_TARGET --preinclude _cplus_preinclude.h --preinclude_macros _cplus_macros.h --gnu_version=40805 -D__pgnu_vsn=40805 --mp -D_OPENMP=202011 -q -o /tmp/nvc++EpFrAzpq9RCe.il /home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp]
+  ignore line: []
+  ignore line: [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/tools/cpp2 /home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -opt 1 -x 119 0xa10000 -x 122 0x40 -x 123 0x1000 -x 127 4 -x 127 17 -x 19 0x400000 -x 28 0x40000 -x 120 0x10000000 -x 70 0x8000 -x 122 1 -x 125 0x20000 -quad -x 59 4 -tp sandybridge -x 120 0x1000 -astype 0 -x 121 1 -fn /home/ewa19/RISM/barytree/BaryTree-master/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -il /tmp/nvc++EpFrAzpq9RCe.il -x 117 0x200 -x 123 0x80000000 -x 123 4 -x 119 0x20 -def __pgnu_vsn=40805 -x 70 0x40000000 -x 183 4 -x 121 0x800 -x 6 0x20000 -x 249 110 -x 120 0x200000 -x 70 0x40000000 -x 8 0x40000000 -x 164 0x800000 -x 85 0x2000 -x 85 0x4000 -x 34 0x40000000 -x 53 0x800000 -x 68 0x1 -x 39 4 -x 56 0x10 -x 26 0x10 -x 26 1 -x 56 0x4000 -y 163 0xc0000000 -x 189 0x10 -y 189 0x4000000 -mp -x 69 0x200 -x 69 0x400 -x 69 2 -gnuvsn 40805 -x 69 0x200 -x 123 0x400 -x 180 0x4000000 -cmdline '+pgc++ /tmp/nvc++EpFrAzpq9RCe.il -mp -v -o CMakeFiles/cmTC_b794c.dir/OpenMPTryFlag.cpp.o -c' -asm /tmp/nvc++_pFr6jFHdcVb.ll]
+  ignore line: [NVC++/x86-64 Linux 21.5-0: compilation successful]
+  ignore line: []
+  ignore line: [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/share/llvm/bin/llc /tmp/nvc++_pFr6jFHdcVb.ll -march=x86-64 -mcpu=native -O1 -fast-isel=0 -non-global-value-max-name-size=4294967295 -x86-cmov-converter=0 --frame-pointer=none -o /tmp/nvc++UpFrkzyKAq78.s]
+  ignore line: []
+  ignore line: [/usr/bin/as /tmp/nvc++UpFrkzyKAq78.s -o CMakeFiles/cmTC_b794c.dir/OpenMPTryFlag.cpp.o]
+  ignore line: [Unlinking /tmp/nvc++EpFrAzpq9RCe.il]
+  ignore line: [Unlinking /tmp/nvc++opFrQKkzBYTw.s]
+  ignore line: [Unlinking /tmp/nvc++_pFr6jFHdcVb.ll]
+  ignore line: [Unlinking /tmp/nvc++UpFrkzyKAq78.s]
+  ignore line: [Unlinking /tmp/nvc++EpFrAIB2P9Gk.llvm]
+  ignore line: [Linking CXX executable cmTC_b794c]
+  ignore line: [/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_b794c.dir/link.txt --verbose=1]
+  ignore line: [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/pgc++   -mp -v    CMakeFiles/cmTC_b794c.dir/OpenMPTryFlag.cpp.o  -o cmTC_b794c  -v ]
+  ignore line: [Export NVCOMPILER=/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5]
+  ignore line: [Export PGI=/home/ewa19/RISM/hpc_sdk]
+  ignore line: []
+  ignore line: [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/tools/acclnk -v /usr/bin/ld /usr/lib64/crt1.o /usr/lib64/crti.o /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/trace_init.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/nvhpc.ld -L/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib -L/usr/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 CMakeFiles/cmTC_b794c.dir/OpenMPTryFlag.cpp.o -rpath /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib -rpath /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -o cmTC_b794c -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -lacchost -ldl -lnvhpcatm -lstdc++ -lnvomp -ldl --as-needed -lnvhpcatm --no-as-needed -lpthread --start-group -lnvcpumath -lnsnvc -lnvc --end-group -lm -lgcc -lc -lgcc -lgcc_s /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib64/crtn.o]
+  link line: [/usr/bin/ld /usr/lib64/crt1.o /usr/lib64/crti.o /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/trace_init.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/nvhpc.ld -L/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib -L/usr/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 CMakeFiles/cmTC_b794c.dir/OpenMPTryFlag.cpp.o -rpath /home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib -rpath /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -o cmTC_b794c -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -lacchost -ldl -lnvhpcatm -lstdc++ -lnvomp -ldl --as-needed -lnvhpcatm --no-as-needed -lpthread --start-group -lnvcpumath -lnsnvc -lnvc --end-group -lm -lgcc -lc -lgcc -lgcc_s /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib64/crtn.o]
+    arg [/usr/bin/ld] ==> ignore
+    arg [/usr/lib64/crt1.o] ==> ignore
+    arg [/usr/lib64/crti.o] ==> ignore
+    arg [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/trace_init.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib/nvhpc.ld] ==> ignore
+    arg [-L/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib] ==> dir [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib]
+    arg [-L/usr/lib64] ==> dir [/usr/lib64]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5]
+    arg [CMakeFiles/cmTC_b794c.dir/OpenMPTryFlag.cpp.o] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_b794c] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64]
+    arg [-lacchost] ==> lib [acchost]
+    arg [-ldl] ==> lib [dl]
+    arg [-lnvhpcatm] ==> lib [nvhpcatm]
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lnvomp] ==> lib [nvomp]
+    arg [-ldl] ==> lib [dl]
+    arg [--as-needed] ==> ignore
+    arg [-lnvhpcatm] ==> lib [nvhpcatm]
+    arg [--no-as-needed] ==> ignore
+    arg [-lpthread] ==> lib [pthread]
+    arg [--start-group] ==> ignore
+    arg [-lnvcpumath] ==> lib [nvcpumath]
+    arg [-lnsnvc] ==> lib [nsnvc]
+    arg [-lnvc] ==> lib [nvc]
+    arg [--end-group] ==> ignore
+    arg [-lm] ==> lib [m]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o] ==> ignore
+    arg [/usr/lib64/crtn.o] ==> ignore
+  collapse library dir [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib] ==> [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib]
+  collapse library dir [/usr/lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5] ==> [/usr/lib/gcc/x86_64-redhat-linux/4.8.5]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64] ==> [/usr/lib64]
+  implicit libs: [acchost;dl;nvhpcatm;stdc++;nvomp;dl;nvhpcatm;pthread;nvcpumath;nsnvc;nvc;m;gcc;c;gcc;gcc_s]
+  implicit dirs: [/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/lib;/usr/lib64;/usr/lib/gcc/x86_64-redhat-linux/4.8.5]
+  implicit fwks: []
+
+

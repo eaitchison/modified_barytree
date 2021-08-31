@@ -1,0 +1,99 @@
+Start testing: Jul 19 18:02 PDT
+----------------------------------------------------------
+1/6 Testing: direct_sum_on_10_particles
+1/6 Test: direct_sum_on_10_particles
+Command: "/home/ewa19/RISM/barytree/BaryTree-master/build/bin/tests_cpu" "0"
+Directory: /home/ewa19/RISM/barytree/BaryTree-master/build/tests
+"direct_sum_on_10_particles" start time: Jul 19 18:02 PDT
+Output:
+----------------------------------------------------------
+/home/ewa19/RISM/barytree/BaryTree-master/build/bin/tests_cpu: error while loading shared libraries: libBaryTree_cpu.so: cannot open shared object file: No such file or directory
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"direct_sum_on_10_particles" end time: Jul 19 18:02 PDT
+"direct_sum_on_10_particles" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/6 Testing: treecode_on_100_particles
+2/6 Test: treecode_on_100_particles
+Command: "/home/ewa19/RISM/barytree/BaryTree-master/build/bin/tests_cpu" "1"
+Directory: /home/ewa19/RISM/barytree/BaryTree-master/build/tests
+"treecode_on_100_particles" start time: Jul 19 18:02 PDT
+Output:
+----------------------------------------------------------
+/home/ewa19/RISM/barytree/BaryTree-master/build/bin/tests_cpu: error while loading shared libraries: libBaryTree_cpu.so: cannot open shared object file: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"treecode_on_100_particles" end time: Jul 19 18:02 PDT
+"treecode_on_100_particles" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/6 Testing: treecode_on_1_target_10000_sources
+3/6 Test: treecode_on_1_target_10000_sources
+Command: "/home/ewa19/RISM/barytree/BaryTree-master/build/bin/tests_cpu" "2"
+Directory: /home/ewa19/RISM/barytree/BaryTree-master/build/tests
+"treecode_on_1_target_10000_sources" start time: Jul 19 18:02 PDT
+Output:
+----------------------------------------------------------
+/home/ewa19/RISM/barytree/BaryTree-master/build/bin/tests_cpu: error while loading shared libraries: libBaryTree_cpu.so: cannot open shared object file: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"treecode_on_1_target_10000_sources" end time: Jul 19 18:02 PDT
+"treecode_on_1_target_10000_sources" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/6 Testing: treecode_parameters_on_1_target_10000_sources
+4/6 Test: treecode_parameters_on_1_target_10000_sources
+Command: "/home/ewa19/RISM/barytree/BaryTree-master/build/bin/tests_cpu" "3"
+Directory: /home/ewa19/RISM/barytree/BaryTree-master/build/tests
+"treecode_parameters_on_1_target_10000_sources" start time: Jul 19 18:02 PDT
+Output:
+----------------------------------------------------------
+/home/ewa19/RISM/barytree/BaryTree-master/build/bin/tests_cpu: error while loading shared libraries: libBaryTree_cpu.so: cannot open shared object file: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"treecode_parameters_on_1_target_10000_sources" end time: Jul 19 18:02 PDT
+"treecode_parameters_on_1_target_10000_sources" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/6 Testing: test_treecode_wrapper
+5/6 Test: test_treecode_wrapper
+Command: "/home/ewa19/RISM/barytree/BaryTree-master/build/bin/tests_cpu" "4"
+Directory: /home/ewa19/RISM/barytree/BaryTree-master/build/tests
+"test_treecode_wrapper" start time: Jul 19 18:02 PDT
+Output:
+----------------------------------------------------------
+/home/ewa19/RISM/barytree/BaryTree-master/build/bin/tests_cpu: error while loading shared libraries: libBaryTree_cpu.so: cannot open shared object file: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"test_treecode_wrapper" end time: Jul 19 18:02 PDT
+"test_treecode_wrapper" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/6 Testing: test_BLDTT
+6/6 Test: test_BLDTT
+Command: "/home/ewa19/RISM/barytree/BaryTree-master/build/bin/tests_cpu" "5"
+Directory: /home/ewa19/RISM/barytree/BaryTree-master/build/tests
+"test_BLDTT" start time: Jul 19 18:02 PDT
+Output:
+----------------------------------------------------------
+/home/ewa19/RISM/barytree/BaryTree-master/build/bin/tests_cpu: error while loading shared libraries: libBaryTree_cpu.so: cannot open shared object file: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"test_BLDTT" end time: Jul 19 18:02 PDT
+"test_BLDTT" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jul 19 18:02 PDT

@@ -1,0 +1,70 @@
+[random cube example] Beginning random cube example with 2 ranks.
+[random cube example] Zoltan load balancing has finished.
+[random cube example] Running direct comparison...
+[random cube example] Running treedriver...
+[BaryTree]
+[BaryTree] BaryTree has started.
+[BaryTree]
+[BaryTree] RunParams struct has been set to the following:
+[BaryTree]
+[BaryTree]                     kernel = 1
+[BaryTree]          num_kernel_params = 1
+[BaryTree]              kernel_params = 1.000000, 
+[BaryTree]              approximation = 1
+[BaryTree]                singularity = 1
+[BaryTree]               compute_type = 1
+[BaryTree]                      theta = 0.900000
+[BaryTree]              interp_degree = 2
+[BaryTree]     interp_pts_per_cluster = 27
+[BaryTree] interp_weights_per_cluster = 27
+[BaryTree] interp_charges_per_cluster = 27
+[BaryTree]        max_per_source_leaf = 100
+[BaryTree]        max_per_target_leaf = 100
+[BaryTree]          size_check_factor = 0.000000
+[BaryTree]                       beta = -1.000000
+[BaryTree]                  verbosity = 1
+[BaryTree]
+[BaryTree] Total BaryTree time: 0.260 seconds.
+[BaryTree] BaryTree has finished.
+[BaryTree]
+[random cube example]
+[random cube example] Treecode timing summary (all times in seconds)...
+[random cube example]
+[random cube example]                                        Max                           Avg                          Max/Min
+[random cube example] |    Total time......................  1.028e+00 s    (100.00%)      1.028e+00 s    (100.00%)       1.000 
+[random cube example] |    |
+[random cube example] |    |....Pre-process................  3.800e-01 s    ( 36.96%)      3.784e-01 s    ( 36.80%)       1.009 
+[random cube example] |    |....Directdriver...............  3.877e-01 s    ( 37.70%)      3.851e-01 s    ( 37.45%)       1.014 
+[random cube example] |    |....Treedriver.................  2.604e-01 s    ( 25.32%)      2.604e-01 s    ( 25.32%)       1.000 
+[random cube example]
+[random cube example]
+[random cube example] |    Directdriver....................  3.877e-01 s    (100.00%)      3.851e-01 s    (100.00%)       1.014 
+[random cube example] |    |
+[random cube example] |    |....Communicate................  6.731e-04 s    (  0.17%)      6.703e-04 s    (  0.17%)       1.008 
+[random cube example] |    |....Compute local..............  5.821e-03 s    (  1.50%)      5.782e-03 s    (  1.50%)       1.014 
+[random cube example] |    |....Compute remote.............  3.813e-01 s    ( 98.35%)      3.786e-01 s    ( 98.32%)       1.014 
+[random cube example]
+[random cube example]
+[random cube example] |    Treedriver......................  2.604e-01 s    (100.00%)      2.604e-01 s    (100.00%)       1.000 
+[random cube example] |    |
+[random cube example] |    |....Build local tree...........  1.745e-03 s    (  0.67%)      1.557e-03 s    (  0.60%)       1.274 
+[random cube example] |    |....Build local batches........  1.891e-03 s    (  0.73%)      1.715e-03 s    (  0.66%)       1.228 
+[random cube example] |    |....Build local clusters.......  8.949e-02 s    ( 34.37%)      8.585e-02 s    ( 32.97%)       1.089 
+[random cube example] |    |....Build LET..................  9.013e-04 s    (  0.35%)      8.991e-04 s    (  0.35%)       1.005 
+[random cube example] |    |....Build local lists..........  3.040e-04 s    (  0.12%)      3.040e-04 s    (  0.12%)       1.000 
+[random cube example] |    |....Compute local..............  1.301e-01 s    ( 49.97%)      1.298e-01 s    ( 49.86%)       1.004 
+[random cube example] |    |....Build remote lists.........  2.402e-04 s    (  0.09%)      2.325e-04 s    (  0.09%)       1.069 
+[random cube example] |    |....Compute remote.............  3.487e-02 s    ( 13.39%)      3.470e-02 s    ( 13.33%)       1.010 
+[random cube example] |    |....Correct potential..........  6.717e-04 s    (  0.26%)      6.692e-04 s    (  0.26%)       1.008 
+[random cube example] |    |....Cleanup....................  2.366e-05 s    (  0.01%)      2.252e-05 s    (  0.01%)       1.106 
+[random cube example]
+[random cube example] ((   |....Total setup................  5.061e-03 s    (  1.94%)      4.708e-03 s    (  1.81%)       1.162 ))
+[random cube example] ((   |....Build local clusters.......  8.949e-02 s    ( 34.37%)      8.585e-02 s    ( 32.97%)       1.089 ))
+[random cube example] ((   |....Total compute..............  1.650e-01 s    ( 63.36%)      1.645e-01 s    ( 63.19%)       1.006 ))
+[random cube example]
+[random cube example]
+[random cube example]                Tree potential energy:  -2230409.901626
+[random cube example]
+[random cube example] Relative inf norm error in potential:  8.601674e-03 
+[random cube example]   Relative 2 norm error in potential:  8.613425e-03 
+[random cube example]

@@ -1,0 +1,13 @@
+direct_sum_on_10_particles 0 0
+treecode_on_100_particles 0 0
+treecode_on_1_target_10000_sources 0 0
+treecode_parameters_on_1_target_10000_sources 0 0
+test_treecode_wrapper 0 0
+test_BLDTT 0 0
+---
+direct_sum_on_10_particles
+treecode_on_100_particles
+treecode_on_1_target_10000_sources
+treecode_parameters_on_1_target_10000_sources
+test_treecode_wrapper
+test_BLDTT
