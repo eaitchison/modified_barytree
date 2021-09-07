@@ -140,6 +140,25 @@ void treedriver(struct Particles *sources, struct Particles *targets, struct Run
             }
         }
 #endif
+#ifdef CUDA_ENABLED
+      double *dt_x,*dt_y,*dt_z,*d_potential;
+      
+      cudaMalloc((void **)&dt_x, targets->num*sizeof(double));
+      cudaMalloc((void **)&dt_y, targets->num*sizeof(double));
+      cudaMalloc((void **)&dt_z, targets->num*sizeof(double));
+      cudaMalloc((void **)&d_potential, targets->num * sizeof(double));
+      cudaMemcpy(dt_x,targets->x,targets->num * sizeof(double), cudaMemcpyHostToDevice);
+      cudaMemcpy(dt_y,targets->y,targets->num * sizeof(double), cudaMemcpyHostToDevice);
+      cudaMemcpy(dt_z,targets->z,targets->num * sizeof(double), cudaMemcpyHostToDevice);
+      cudaMemcpy(d_potential,0.0,targets->num * sizeof(double), cudaMemcpyHostToDevice);
+      if (run_params->singularity == SUBTRACTION) {
+         double *dt_q;
+         cudaMalloc((void **)&dt_q, targets->num*sizeof(double));
+         cudaMemcpy(dt_q,targets->q,targets->num * sizeof(double), cudaMemcpyHostToDevice);
+        }
+         
+#endif 
+
         STOP_TIMER(&time_tree[0]);
         
         START_TIMER(&time_tree[1]);
@@ -151,6 +170,23 @@ void treedriver(struct Particles *sources, struct Particles *targets, struct Run
             #pragma acc enter data copyin(sources->w[0:sources->num])
         }
 #endif
+#ifdef CUDA_ENABLED
+      double *ds_x,*ds_y,*ds_z,*ds_q;
+      cudaMalloc((void **)&ds_x, sources->num*sizeof(double));
+      cudaMalloc((void **)&ds_y, sources->num*sizeof(double));
+      cudaMalloc((void **)&ds_z, sources->num*sizeof(double));
+      cudaMalloc((void **)&ds_q, sources->num*sizeof(double));
+      cudaMemcpy(ds_x,sources->x,sources->num * sizeof(double), cudaMemcpyHostToDevice);
+      cudaMemcpy(ds_y,sources->y,sources->num * sizeof(double), cudaMemcpyHostToDevice);
+      cudaMemcpy(ds_z,sources->z,sources->num * sizeof(double), cudaMemcpyHostToDevice);
+      cudaMemcpy(ds_q,sources->q,sources->num * sizeof(double), cudaMemcpyHostToDevice);
+      if (run_params->singularity == SUBTRACTION) {
+          double *ds_w; 
+          cudaMalloc((void **)&ds_w, sources->num*sizeof(double));
+          cudaMemcpy(ds_w,sources->w,sources->num * sizeof(double), cudaMemcpyHostToDevice);
+         }
+#endif
+
         STOP_TIMER(&time_tree[1]);
 
         START_TIMER(&time_tree[2]);

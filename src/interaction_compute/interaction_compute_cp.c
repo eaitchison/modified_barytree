@@ -20,6 +20,10 @@
 #include "../kernels/rbs-v/rbs-v.h"
 #include "../kernels/user_kernel/user_kernel.h"
 
+#ifdef CUDA_ENABLED
+#include "../kernels/CUDA/cuda_coulomb_cp.h"
+#endif 
+
 #include "interaction_compute.h"
 
 
@@ -98,13 +102,21 @@ void InteractionCompute_CP(double *potential, struct Tree *tree, struct Tree *ba
                 if (run_params->approximation == LAGRANGE) {
 
                     if (run_params->singularity == SKIPPING) {
+#ifdef CUDA_ENABLED
+                        K_CUDA_Coulomb_CP_Lagrange(num_sources_in_batch,
+                            interp_pts_per_cluster, batch_start, cluster_start,
+                            source_x, source_y, source_z, source_q,
+                            cluster_x, cluster_y, cluster_z, cluster_q,
+                            run_params, stream_id);
+#else
+
             
                         K_Coulomb_CP_Lagrange(num_sources_in_batch,
                             interp_pts_per_cluster, batch_start, cluster_start,
                             source_x, source_y, source_z, source_q,
                             cluster_x, cluster_y, cluster_z, cluster_q,
                             run_params, stream_id);
-
+#endif
                     } else if (run_params->singularity == SUBTRACTION) {
 
                         K_Coulomb_SS_CP_Lagrange(num_sources_in_batch,

@@ -16,6 +16,11 @@
 #include "struct_clusters.h"
 #include "clusters.h"
 
+#ifdef CUDA_ENABLED
+#include <cuda.h>
+#include <cuda_runtime.h>
+#include "cuda_cluster.h"
+#endif
 
 static void pc_comp_ms_modifiedF(const struct Tree *tree, int idx, int interpolationDegree,
                 double *xS, double *yS, double *zS, double *qS,
@@ -276,6 +281,23 @@ void Clusters_Targets_Construct(struct Clusters **clusters_addr, const struct Pa
     }
 #endif
 
+#ifdef CUDA_ENABLED
+      double *dc_xC,*dc_yC,*dc_zC,*dc_qC;
+      cudaMalloc((void **)&dc_xC, totalNumberInterpolationPoints * sizeof(double));
+      cudaMalloc((void **)&dc_yC, totalNumberInterpolationPoints * sizeof(double));
+      cudaMalloc((void **)&dc_zC, totalNumberInterpolationPoints * sizeof(double));
+      cudaMalloc((void **)&dc_qC, totalNumberInterpolationPoints * sizeof(double));
+      cudaMemcpy(dc_xC,0.0, totalNumberInterpolationPoints *sizeof(double),cudaMemcpyHostToDevice);
+      cudaMemcpy(dc_yC,0.0, totalNumberInterpolationPoints *sizeof(double),cudaMemcpyHostToDevice);
+      cudaMemcpy(dc_zC,0.0, totalNumberInterpolationPoints *sizeof(double),cudaMemcpyHostToDevice);
+      cudaMemcpy(dc_qC,0.0, totalNumberInterpolationPoints *sizeof(double),cudaMemcpyHostToDevice);
+      if( singularity == SUBTRACTION) {
+        double *dc_wC;
+        cudaMalloc((void **)&dc_wC, totalNumberInterpolationPoints * sizeof(double));
+        cudaMemcpy(dc_wC,0.0, totalNumberInterpolationPoints *sizeof(double),cudaMemcpyHostToDevice);
+        }
+#endif
+
     for (int i = 0; i < tree_numnodes; i++) {
         cp_comp_interp(tree, i, interpolationDegree, xC, yC, zC);
     }
@@ -283,6 +305,10 @@ void Clusters_Targets_Construct(struct Clusters **clusters_addr, const struct Pa
 #ifdef OPENACC_ENABLED
     #pragma acc wait
 #endif
+
+#ifdef CUDA_ENABLED
+    cudaDeviceSynchronize();
+#endif 
 
     return;
 }
@@ -1866,8 +1892,15 @@ void cp_comp_interp(const struct Tree *tree, int idx, int interpolationDegree,
                               nodeZ[0:interpDegreeLim], tt[0:interpDegreeLim])
     {
 #endif
-
-
+#ifdef CUDA_ENABLED
+    double d_xb,d_yb,d_zb,h_xb,h_yb,h_zb,d_x0,d_y0,d_z0;
+    h_xb=x1-x0;
+    h_yb=y1-y0;
+    h_zb=z1-z0;
+    cluster_interp(&clusterX,&clusterY,&clusterZ,h_xb,h_yb, \
+                   h_zb,x0,y0,z0,interpDegreeLim,interpolationDegree,interpolationPointsPerCluster, \  
+                   startingIndexInClustersArray)
+#endif 
     //  Fill in arrays of unique x, y, and z coordinates for the interpolation points.
 #ifdef OPENACC_ENABLED
     #pragma acc loop vector(32) independent 
