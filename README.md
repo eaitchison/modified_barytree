@@ -12,16 +12,20 @@ BaryTree
    A work-in-progress library for fast computation of N-body interactions on multiple GPUs,
    BaryTree implements barycentric Lagrange and Hermite polynomial interpolation fast
    summation methods. The current code employs an OpenACC GPU implementation with MPI
-   for distributed memory parallelization.
+   for distributed memory parallelization. 
+   Modifications for CUDA GPU implementation.
 
 
    Authors:  
    - Leighton W. Wilson  (lwwilson@umich.edu) 
    - Nathan J. Vaughn  (njvaughn@umich.edu) 
    
+   
    Department of Mathematics,
    University of Michigan, Ann Arbor.
    
+   CUDA Implementations
+    Erick Aitchison (eaitchis@uci.edu)
 
 Building
 --------
@@ -31,7 +35,7 @@ directory of BaryTree:
 
     mkdir build; cd build; export CC=<C compiler>; cmake ..; make
 
-Compiling GPU versions requires that a PGI C compiler be used. For more information
+Compiling OPENACC versions requires that a PGI C compiler be used. For more information
 on building and installing, see __INSTALL.md__ in this directory.
 
 
