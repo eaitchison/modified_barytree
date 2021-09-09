@@ -206,7 +206,7 @@ SET(SRCS_K_USER
     kernels/user_kernel/user_kernel_cp.c)
 
 SET(SRCS_K_CUDA_COULOMB
-    kernels/CUDA/cuda_coulomb_cp.cuh
+    kernels/CUDA/cuda_coulomb_cp.h
     kernels/CUDA/cuda_coulomb_cp.cu)
 
 

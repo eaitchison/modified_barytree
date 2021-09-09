@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.9...3.14)
-project(BaryTree VERSION 1.1a LANGUAGES C CXX)
+project(BaryTree VERSION 1.1 LANGUAGES C CXX)
 
 set(default_build_type "Release")
 
@@ -21,9 +21,10 @@ option(BUILD_EXAMPLES "build examples with Zoltan"              ON)
 option(ENABLE_ACC_BUILD "build OPENACC GPU version"             ON)
 option(ENABLE_CUDA_BUILD "build CUDA GPU version"               ON)
 option(BUILD_SHARED_LIBS "build libraries as shared objects"	ON)
+message( "Before MPI  ENABLE_CUDA_BUILD")
 
-find_package(MPI    REQUIRED)
-find_package(OpenMP REQUIRED)
+#find_package(MPI    REQUIRED)
+#find_package(OpenMP REQUIRED)
 
 if(BUILD_EXAMPLES OR BUILD_TESTS)
     find_package(Zoltan REQUIRED)
@@ -32,13 +33,17 @@ if(BUILD_EXAMPLES OR BUILD_TESTS)
     target_include_directories(Zoltan_Interface INTERFACE ${Zoltan_INCLUDE_DIRS})
 endif()
 
-
+message( "Before ENABLE_CUDA_BUILD")
 if(ENABLE_CUDA_BUILD)
+    message( "IN ENABLE_CUDA_BUILD")
     enable_language(CUDA)
     find_package(CUDA 10.0 REQUIRED)
     add_library(CUDA_Interface INTERFACE)
     target_link_libraries(CUDA_Interface INTERFACE ${CUDA_LIBRARIES})
 endif()
+find_package(MPI    REQUIRED)
+find_package(OpenMP REQUIRED)
+
 #Some PGI versions seem to require a link flag for OpenMP
 set_property(TARGET OpenMP::OpenMP_C APPEND
                                      PROPERTY

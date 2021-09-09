@@ -1,4 +1,4 @@
-set(CMAKE_C_COMPILER "/home/ewa19/RISM/hpc_sdk/Linux_x86_64/21.5/compilers/bin/pgcc")
+set(CMAKE_C_COMPILER "/home/ewa19/RISM/hpc_sdk/Linux_x86_64/2021/compilers/bin/pgcc")
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "PGI")
 set(CMAKE_C_COMPILER_VERSION "21.5.0")
