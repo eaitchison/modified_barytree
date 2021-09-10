@@ -16,7 +16,7 @@ typedef enum KERNEL
     MQ,
     RBS_U,
     RBS_V,
-    USER
+    USER,
     CUDA_COULOMB
 } KERNEL;
 
